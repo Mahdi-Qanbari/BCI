@@ -14,8 +14,9 @@ Table of Contents
         4. Create an MNE Raw Object
         5. Format Events for MNE
         6. Plotting the Raw EEG Data with Events
-    Common Pitfalls and Troubleshooting
-    Additional Resources
+        
+    P300 Pre-processing Steps
+
 
 
 
@@ -48,3 +49,18 @@ In MNE, events are typically represented as a NumPy array with shape (n_events, 
     Sample Number: The exact point in the EEG data (in samples) when the event occurred.
     Previous Event ID: Usually set to 0. It's reserved for specific uses but not commonly used.
     Event ID: An integer that uniquely identifies the type of event.
+
+
+P300 Pre-processing Steps
+
+Here’s a comprehensive guide for pre-processing your P300-related EEG data:
+
+    Load and Inspect the Data
+    Filter the Data
+    Identify and Mark Bad Channels
+    Re-reference the Data
+    Artifact Removal Using ICA
+    Create Events and Epochs
+    Baseline Correction
+    Reject Bad Epochs
+    Averaging Epochs for P300 Extraction
