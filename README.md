@@ -83,6 +83,11 @@ ICA is a statistical method used to separate mixed signals into independent comp
 - **Statistical Independence:** Assumes that the sources (e.g., brain signals and artifacts) are statistically independent from each other.
 - **Non-Gaussianity:** ICA exploits the non-Gaussian nature of the sources to separate them effectively.
 
+Mathematical Process:
+
+- **ICA takes the observed mixed signals (EEG recordings) and finds a transformation that maximizes the statistical independence of the resulting components.
+- **Essentially, it estimates the "mixing matrix" that combines the independent sources to produce the observed data.
+
 ### 6. Create Events and Epochs
 Identify significant events within the EEG data (e.g., stimulus presentations or participant responses) and create epochs around these events. This segmentation allows for targeted analysis of brain responses associated with specific stimuli or actions.
 
