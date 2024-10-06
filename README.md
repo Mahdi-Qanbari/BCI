@@ -55,12 +55,30 @@ P300 Pre-processing Steps
 
 Here’s a comprehensive guide for pre-processing your P300-related EEG data:
 
-    Load and Inspect the Data
-    Filter the Data
-    Identify and Mark Bad Channels
-    Re-reference the Data
-    Artifact Removal Using ICA
-    Create Events and Epochs
-    Baseline Correction
-    Reject Bad Epochs
-    Averaging Epochs for P300 Extraction
+1.Load and Inspect the Data
+2.Filter the Data:
+    Applying a band-pass filter helps to focus on the frequency range where the P300 component typically resides (0.1 Hz to 30 Hz).
+3.Identify and Mark Bad Channels 
+4.Re-reference the Data:
+    Re-referencing involves adjusting the voltage measurements of EEG channels based on the average or another reference channel. This means that the recorded EEG signals from each electrode are        recalibrated relative to a chosen reference point.
+    Purpose:
+        Minimize Noise: The reference electrode may pick up noise or artifacts that can skew results. By re-referencing, you can minimize this noise and improve the clarity of the signal.
+        Improve Spatial Resolution: Re-referencing can enhance the spatial resolution of your data, making it easier to identify brain activity related to specific cognitive processes, such as the          P300.
+        Consistency: It helps to standardize the signals across different recordings and subjects, making comparisons more valid.
+    Common Referencing Strategies
+        Average Reference: This involves taking the average of all channel recordings and using it as a reference. This is common in many studies, including those analyzing P300, because it can             help reduce the impact of noise from specific channels.
+        Linked Ears: In this method, the signals from both ear electrodes are averaged and used as the reference.
+        Common Reference: A specific electrode (like Cz) is used as a reference for all other electrodes.
+    
+5. Artifact Removal Using ICA:
+    Assumptions:
+    Statistical Independence: ICA assumes that the sources (e.g., brain signals, artifacts) are statistically independent from each other.
+    Non-Gaussianity: The sources must have a non-Gaussian distribution. ICA uses this property to separate the signals.
+    Mathematical Process:
+    ICA takes the observed mixed signals (EEG recordings) and finds a transformation that maximizes the statistical independence of the resulting components.
+    Essentially, it estimates the "mixing matrix" that combines the independent sources to produce the observed data.
+   
+7. Create Events and Epochs
+7.Baseline Correction
+8.Reject Bad Epochs
+9.Averaging Epochs for P300 Extraction
