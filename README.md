@@ -59,3 +59,48 @@ In MNE, events are typically represented as a NumPy array with shape `(n_events,
 import numpy as np
 import mne
 import matplotlib.pyplot as plt
+
+## P300 Pre-processing Steps
+
+This section outlines the steps necessary for pre-processing P300-related EEG data. Each step is crucial for preparing your data for subsequent analysis.
+
+### 1. Load and Inspect the Data
+Begin by loading your EEG data and inspecting it for any artifacts or irregularities. This initial review helps identify potential issues that may affect the analysis.
+
+### 2. Filter the Data
+Apply a band-pass filter to isolate the frequency range where the P300 component typically occurs (0.1 Hz to 30 Hz). Filtering helps enhance the relevant brain signals while minimizing noise.
+
+### 3. Identify and Mark Bad Channels
+Inspect the data to identify any bad channels, which should be marked for exclusion during analysis. This step is essential for ensuring data quality and reliability.
+
+### 4. Re-reference the Data
+Re-referencing involves adjusting the voltage measurements of EEG channels based on the average or another reference channel. This process improves signal clarity and reduces noise.
+
+- **Purpose:**
+  - **Minimize Noise:** Reduces artifacts from specific channels, enhancing signal quality.
+  - **Improve Spatial Resolution:** Aids in identifying brain activity related to cognitive processes, such as the P300.
+  - **Ensure Consistency:** Standardizes signals across different recordings and subjects, allowing for valid comparisons.
+
+- **Common Referencing Strategies:**
+  - **Average Reference:** Utilizes the average of all channel recordings.
+  - **Linked Ears:** Averages signals from both ear electrodes.
+  - **Common Reference:** Uses a specific electrode (e.g., Cz) as a reference for all other electrodes.
+
+### 5. Artifact Removal Using ICA
+Independent Component Analysis (ICA) is employed to remove artifacts from EEG data. ICA operates under the assumptions of statistical independence and non-Gaussianity of the underlying sources.
+
+### 6. Create Events and Epochs
+Identify events of interest within the EEG data and create epochs around these events for further analysis. This segmentation allows for a more focused study of brain responses related to specific stimuli.
+
+### 7. Baseline Correction
+Apply baseline correction to adjust the data for pre-stimulus activity. This step helps to account for any pre-existing electrical activity that could skew the results.
+
+### 8. Reject Bad Epochs
+Identify and reject epochs that contain excessive artifacts. This quality control step ensures that only clean, reliable data is used for analysis.
+
+### 9. Averaging Epochs for P300 Extraction
+Finally, average the epochs to extract the P300 component for analysis. This averaging process helps enhance the signal-to-noise ratio, allowing for clearer interpretation of the P300 response.
+
+---
+
+By following these steps, you will effectively pre-process your P300-related EEG data, preparing it for reliable analysis.
