@@ -4,7 +4,7 @@
 1. [What Are Events in EEG Data?](#what-are-events-in-eeg-data)
 2. [Why Are Events Important?](#why-are-events-important)
 3. [Understanding Event Data Structure](#understanding-event-data-structure)
-4. [Step-by-Step Example: Plotting Raw EEG Data with Events](#step-by-step-example-plotting-raw-eeg-data-with-events)
+4. Step-by-Step Example: Plotting Raw EEG Data with Events
    - 1. Import Necessary Libraries
    - 2. Load Your EEG Data
    - 3. Inspect and Extract Events
