@@ -94,9 +94,9 @@ Example:
    - Original EEG Signal: Assume you have a mixed signal that combines true brain activity (like P300) and artifacts (like eye blinks).
 
    - ICA Decomposition: When you apply ICA, it separates the mixed signal into several independent components. Let’s say you have:
-        Component 1: Represents the true P300 response.
-        Component 2: Represents eye blinks (artifact).
-        Component 3: Represents muscle activity (another artifact).
+        - Component 1: Represents the true P300 response.
+        - Component 2: Represents eye blinks (artifact).
+        - Component 3: Represents muscle activity (another artifact).
 
    - Identifying Components: You look at the waveforms of the components. You can visually recognize Component 2 as an eye blink artifact.
 
