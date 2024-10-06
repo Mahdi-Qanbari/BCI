@@ -88,6 +88,22 @@ Mathematical Process:
 - ICA takes the observed mixed signals (EEG recordings) and finds a transformation that maximizes the statistical independence of the resulting components.
 - Essentially, it estimates the "mixing matrix" that combines the independent sources to produce the observed data.
 
+
+Example:
+
+   - Original EEG Signal: Assume you have a mixed signal that combines true brain activity (like P300) and artifacts (like eye blinks).
+
+   - ICA Decomposition: When you apply ICA, it separates the mixed signal into several independent components. Let’s say you have:
+        Component 1: Represents the true P300 response.
+        Component 2: Represents eye blinks (artifact).
+        Component 3: Represents muscle activity (another artifact).
+
+   - Identifying Components: You look at the waveforms of the components. You can visually recognize Component 2 as an eye blink artifact.
+
+   - Excluding Artifacts: You exclude Component 2 and keep Components 1 and 3.
+
+   - Reconstruction: When you reconstruct the data using ICA without Component 2, you end up with a cleaner EEG signal that retains the true brain activity while removing the eye blink interference.
+
 ### 6. Create Events and Epochs
 Identify significant events within the EEG data (e.g., stimulus presentations or participant responses) and create epochs around these events. This segmentation allows for targeted analysis of brain responses associated with specific stimuli or actions.
 
