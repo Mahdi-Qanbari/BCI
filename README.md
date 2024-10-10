@@ -1,4 +1,4 @@
-# BCI_Data_Analysis
+# BCI Data Analysis Using MNE-Python 
 
 ## Table of Contents
 1. [What Are Events in EEG Data?](#what-are-events-in-eeg-data)
