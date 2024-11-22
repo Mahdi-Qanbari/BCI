@@ -1,4 +1,4 @@
-# BCI Data Analysis Using MNE-Python 
+# BCI and Movement Neuroscience Data Analysis Using MNE-Python and MATLAB
 
 ## Table of Contents
 1. [What Are Events in EEG Data?](#what-are-events-in-eeg-data)
