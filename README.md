@@ -13,7 +13,7 @@
    - 6. Plotting the Raw EEG Data with Events
 5. [P300 Pre-processing Steps](#p300-pre-processing-steps)
 6. [When to Use LDA in EEG Analysis](#When-to-Use-LDA-in-EEG-Analysis)
----
+7. [Movement Neuroscience ; EMGs and iEMG](#Movement Neuroscience ; EMGs and iEMG)
 
 ## What Are Events in EEG Data?
 
@@ -146,4 +146,5 @@ Example Workflow Using Both ICA and LDA
         Train the LDA classifier on the extracted features.
         Evaluate the classifier’s performance on unseen data.
 
+### Movement Neuroscience ; EMGs and iEMG
 
