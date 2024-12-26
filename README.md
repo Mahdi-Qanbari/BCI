@@ -13,7 +13,8 @@
    - 6. Plotting the Raw EEG Data with Events
 5. [P300 Pre-processing Steps](#p300-pre-processing-steps)
 6. [When to Use LDA in EEG Analysis](#When-to-Use-LDA-in-EEG-Analysis)
-7. [Movement Neuroscience ; EMGs and iEMG](#Movement-Neuroscience-EMGs-and-iEMG)
+7. [Movement Neuroscience ; EMGs and iEMG](#movement-neuroscience-emgs-and-iemg)
+
 
 ## What Are Events in EEG Data?
 
