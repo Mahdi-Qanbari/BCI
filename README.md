@@ -13,7 +13,7 @@
    - 6. Plotting the Raw EEG Data with Events
 5. [P300 Pre-processing Steps](#p300-pre-processing-steps)
 6. [When to Use LDA in EEG Analysis](#When-to-Use-LDA-in-EEG-Analysis)
-7. [Movement Neuroscience : EMGs and iEMG](#movement-neuroscience-emgs-and-iemg)
+7. [Movement Neuroscience: EMGs and iEMG](#movement-neuroscience-emgs-and-iemg)
 
 
 ## What Are Events in EEG Data?
@@ -147,6 +147,6 @@ Example Workflow Using Both ICA and LDA
         Train the LDA classifier on the extracted features.
         Evaluate the classifier’s performance on unseen data.
 
-## Movement Neuroscience : EMGs and iEMG
+## Movement Neuroscience :EMGs and iEMG
 
 Movement neuroscience is the study of how the brain and nervous system control body movements. It focuses on understanding motor control, coordination, and the neural mechanisms that enable movement. One key area of research is the use of electromyography (EMG), a technique that measures electrical activity in muscles. **EMGs** detect muscle activation, helping researchers analyze movement patterns and muscle function. **Intramuscular EMG (iEMG)** is a more specific variation where electrodes are inserted directly into the muscle to record more detailed activity. This technique allows for high-resolution data on muscle firing, making it useful in clinical and research settings. EMGs are widely used to study muscle disorders, rehabilitation, and motor performance. iEMG is particularly useful in understanding muscle behavior during complex or fine motor tasks. Both EMG and iEMG are essential for investigating neural control of movement, aiding in diagnoses and therapeutic interventions. I have added **two files** related to experiments involving these techniques for further study.
